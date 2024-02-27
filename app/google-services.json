@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "830420039745",
+    "project_id": "classcarconnect",
+    "storage_bucket": "classcarconnect.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830420039745:android:a1cfa6757bee400843aec0",
+        "android_client_info": {
+          "package_name": "com.blablacar4v"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMzjIQbf9aEXwA6xpHhEomGYyYSFX-lb8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
