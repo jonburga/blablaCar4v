@@ -9,14 +9,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.blablacar4v.models.User;
 import com.google.firebase.auth.FirebaseAuth;
-
+import com.google.firebase.firestore.FirebaseFirestore;
 
 
 public class SignUpActivity extends AppCompatActivity {
-
+    private FirebaseFirestore db;
     EditText emailEditText;
     EditText passwordEditText;
+    EditText directionEditText;
+    EditText phoneEditText;
+    EditText nameEditText;
     Button signUpButton;
 
 
@@ -27,6 +31,10 @@ public class SignUpActivity extends AppCompatActivity {
         emailEditText = findViewById(R.id.emailEditText);
         passwordEditText = findViewById(R.id.passwordEditText);
         signUpButton = findViewById(R.id.signUpButton);
+        directionEditText = findViewById(R.id.directionEdit);
+        phoneEditText = findViewById(R.id.telephonEditText);
+        nameEditText = findViewById(R.id.nameEditText);
+        db = FirebaseFirestore.getInstance();
         setUp();
     }
 
@@ -37,6 +45,13 @@ public class SignUpActivity extends AppCompatActivity {
                 if (!emailEditText.getText().toString().isEmpty() || !passwordEditText.getText().toString().isEmpty()) {
                     FirebaseAuth.getInstance().createUserWithEmailAndPassword(emailEditText.getText().toString(), passwordEditText.getText().toString());
                     if (FirebaseAuth.getInstance().getCurrentUser() != null) {
+                        db.collection("users").document(FirebaseAuth.getInstance().getCurrentUser().getUid()).set(new User(
+                                emailEditText.getText().toString(),
+                                passwordEditText.getText().toString(),
+                                nameEditText.getText().toString(),
+                                phoneEditText.getText().toString(),
+                                directionEditText.getText().toString()
+                        ));
                         showHome(FirebaseAuth.getInstance().getCurrentUser().getEmail(), ProviderType.BASIC);
                     }
                 } else {

@@ -49,7 +49,7 @@
         android:backgroundTint="#DADADA"
         android:ems="10"
         android:fontFamily="monospace"
-        android:hint="dirección"
+        android:hint="Calle, número, piso"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
