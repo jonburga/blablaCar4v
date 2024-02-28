@@ -27,11 +27,6 @@ public class LoginActivity extends AppCompatActivity {
     Button loginInButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         emailEditText = findViewById(R.id.emailEditText);
@@ -52,14 +47,7 @@ public class LoginActivity extends AppCompatActivity {
         singUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!emailEditText.getText().toString().isEmpty() ||! passwordEditText.getText().toString().isEmpty()){
-                    FirebaseAuth.getInstance().createUserWithEmailAndPassword(emailEditText.getText().toString(), passwordEditText.getText().toString());
-                    if (FirebaseAuth.getInstance().getCurrentUser() != null) {
-                        showHome(FirebaseAuth.getInstance().getCurrentUser().getEmail(), ProviderType.BASIC);
-                    }
-                }else{
-                    showAlert();
-                }
+                startActivity(new Intent(LoginActivity.this, SignUpActivity.class));
             }
         });
 

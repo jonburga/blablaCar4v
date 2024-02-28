@@ -92,11 +92,11 @@
         android:id="@+id/logoutButton"
         android:layout_width="59dp"
         android:layout_height="66dp"
-        android:layout_marginTop="16dp"
+        android:backgroundTint="#EDEDED"
         android:text="🚪"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="-1dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

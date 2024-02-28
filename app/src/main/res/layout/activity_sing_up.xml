@@ -4,42 +4,128 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:drawable/editbox_background"
     tools:context=".SignUpActivity">
 
     <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/emailEditText"
+        android:layout_width="334dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="#DADADA"
         android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="184dp" />
-
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="email"
         android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="264dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/telephonEditText"
+        android:layout_width="329dp"
+        android:layout_height="52dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="#DADADA"
         android:ems="10"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="353dp" />
+        android:fontFamily="monospace"
+        android:hint="nº teléfono"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.585"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.765" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/directionEdit"
+        android:layout_width="329dp"
+        android:layout_height="52dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="#DADADA"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="dirección"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.585"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.625" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="329dp"
+        android:layout_height="52dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="#DADADA"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="crear contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.502" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="329dp"
+        android:layout_height="52dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="#DADADA"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint=" nombre completo"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.226" />
+
+    <TextView
+        android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="437dp" />
+        android:layout_marginTop="52dp"
+        android:fontFamily="monospace"
+        android:text="Registrate gratis"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="296dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#DADADA"
+        android:text="Registrarse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/termsConditionsTextView"
+        android:layout_width="325dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="6dp"
+        android:text="Registrartandote aceptas nuestros términos y condiciones"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/signUpButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telephonEditText"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
