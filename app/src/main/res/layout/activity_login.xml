@@ -23,7 +23,9 @@
       app:layout_constraintHorizontal_bias="0.537"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.896" />
+      app:layout_constraintVertical_bias="0.896"
+      tools:text="asier@doqa.com"
+      />
 
   <EditText
       android:id="@+id/passwordEditText"
@@ -33,13 +35,14 @@
       android:backgroundTint="#DADADA"
       android:ems="10"
       android:fontFamily="monospace"
+      android:hint="password"
       android:inputType="textPassword"
       android:textStyle="italic"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      android:hint="password"/>
+      tools:text="doqa123" />
 
   <TextView
       android:id="@+id/textView6"
@@ -61,8 +64,7 @@
       android:layout_height="43dp"
       android:layout_marginTop="60dp"
       android:layout_marginBottom="280dp"
-      android:background="@android:drawable/editbox_background"
-      android:backgroundTint="#2196F3"
+      android:backgroundTint="#0785EA"
       android:backgroundTintMode="add"
       android:text="Acceder"
       app:layout_constraintBottom_toBottomOf="parent"
@@ -76,7 +78,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:fontFamily="monospace"
-      android:text="ClassCarConnect"
+      android:text="RideConnect"
       android:textSize="20sp"
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
