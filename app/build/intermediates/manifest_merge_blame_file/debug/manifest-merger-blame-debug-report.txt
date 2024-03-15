@@ -1,0 +1,425 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.blablacar4v"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="25"
+9        android:targetSdkVersion="33" />
+10
+11    <!-- Include required permissions for Google Maps API to run. -->
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\649fe6d5611898714c5475c58c8fba15\transformed\play-services-maps-18.2.0\AndroidManifest.xml:23:5-79
+12-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\649fe6d5611898714c5475c58c8fba15\transformed\play-services-maps-18.2.0\AndroidManifest.xml:23:22-76
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\649fe6d5611898714c5475c58c8fba15\transformed\play-services-maps-18.2.0\AndroidManifest.xml:24:5-67
+13-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\649fe6d5611898714c5475c58c8fba15\transformed\play-services-maps-18.2.0\AndroidManifest.xml:24:22-64
+14
+15    <uses-feature
+15-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\649fe6d5611898714c5475c58c8fba15\transformed\play-services-maps-18.2.0\AndroidManifest.xml:26:5-28:35
+16        android:glEsVersion="0x00020000"
+16-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\649fe6d5611898714c5475c58c8fba15\transformed\play-services-maps-18.2.0\AndroidManifest.xml:27:9-41
+17        android:required="true" />
+17-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\649fe6d5611898714c5475c58c8fba15\transformed\play-services-maps-18.2.0\AndroidManifest.xml:28:9-32
+18
+19    <queries>
+19-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\649fe6d5611898714c5475c58c8fba15\transformed\play-services-maps-18.2.0\AndroidManifest.xml:30:5-34:15
+20
+21        <!-- Needs to be explicitly declared on Android R+ -->
+22        <package android:name="com.google.android.apps.maps" />
+22-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\649fe6d5611898714c5475c58c8fba15\transformed\play-services-maps-18.2.0\AndroidManifest.xml:33:9-64
+22-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\649fe6d5611898714c5475c58c8fba15\transformed\play-services-maps-18.2.0\AndroidManifest.xml:33:18-61
+23    </queries>
+24
+25    <uses-permission android:name="android.permission.WAKE_LOCK" />
+25-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\70ed699a4c8598ae23ad7f7f0a1e2128\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:24:5-68
+25-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\70ed699a4c8598ae23ad7f7f0a1e2128\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:24:22-65
+26    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+26-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\70ed699a4c8598ae23ad7f7f0a1e2128\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:25:5-79
+26-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\70ed699a4c8598ae23ad7f7f0a1e2128\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:25:22-76
+27    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+27-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\70ed699a4c8598ae23ad7f7f0a1e2128\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:26:5-88
+27-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\70ed699a4c8598ae23ad7f7f0a1e2128\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:26:22-85
+28    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+28-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\70ed699a4c8598ae23ad7f7f0a1e2128\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:27:5-82
+28-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\70ed699a4c8598ae23ad7f7f0a1e2128\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:27:22-79
+29    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+29-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\a3032b8607e2bf569264bbabf3160ed4\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:26:5-110
+29-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\a3032b8607e2bf569264bbabf3160ed4\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:26:22-107
+30    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+30-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\95e7193e61fbc59531c01aa217aa8924\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:5-98
+30-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\95e7193e61fbc59531c01aa217aa8924\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:22-95
+31
+32    <permission
+32-->[androidx.core:core:1.9.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\df2500f8c68c276eddb1b4b8c95a1bb5\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+33        android:name="com.blablacar4v.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+33-->[androidx.core:core:1.9.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\df2500f8c68c276eddb1b4b8c95a1bb5\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+34        android:protectionLevel="signature" />
+34-->[androidx.core:core:1.9.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\df2500f8c68c276eddb1b4b8c95a1bb5\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+35
+36    <uses-permission android:name="com.blablacar4v.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+36-->[androidx.core:core:1.9.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\df2500f8c68c276eddb1b4b8c95a1bb5\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+36-->[androidx.core:core:1.9.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\df2500f8c68c276eddb1b4b8c95a1bb5\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+37
+38    <application
+38-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:5:5-47:19
+39        android:allowBackup="true"
+39-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:6:9-35
+40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+40-->[androidx.core:core:1.9.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\df2500f8c68c276eddb1b4b8c95a1bb5\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+41        android:dataExtractionRules="@xml/data_extraction_rules"
+41-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:7:9-65
+42        android:debuggable="true"
+43        android:extractNativeLibs="false"
+44        android:fullBackupContent="@xml/backup_rules"
+44-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:8:9-54
+45        android:icon="@mipmap/ic_launcher"
+45-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:9:9-43
+46        android:label="@string/app_name"
+46-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:10:9-41
+47        android:roundIcon="@mipmap/ic_launcher_round"
+47-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:11:9-54
+48        android:supportsRtl="true"
+48-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:12:9-35
+49        android:testOnly="true"
+50        android:theme="@style/Theme.BlaBlaCar4v" >
+50-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:13:9-49
+51        <activity
+51-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:15:9-17:40
+52            android:name="com.blablacar4v.RideActivity"
+52-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:16:13-41
+53            android:exported="false" />
+53-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:17:13-37
+54        <activity
+54-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:18:9-20:40
+55            android:name="com.blablacar4v.recycler.UserAdapter"
+55-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:19:13-49
+56            android:exported="false" />
+56-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:20:13-37
+57        <activity
+57-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:21:9-23:40
+58            android:name="com.blablacar4v.MapActivity"
+58-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:22:13-40
+59            android:exported="false" />
+59-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:23:13-37
+60
+61        <meta-data
+61-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:25:9-27:55
+62            android:name="com.google.android.geo.API_KEY"
+62-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:26:13-58
+63            android:value="@string/google_maps_key" />
+63-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:27:13-52
+64
+65        <activity
+65-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:29:9-31:40
+66            android:name="com.blablacar4v.SetUpRideActivity"
+66-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:30:13-46
+67            android:exported="false" />
+67-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:31:13-37
+68        <activity
+68-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:32:9-34:40
+69            android:name="com.blablacar4v.SignUpActivity"
+69-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:33:13-43
+70            android:exported="false" />
+70-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:34:13-37
+71        <activity
+71-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:35:9-37:40
+72            android:name="com.blablacar4v.MainActivity"
+72-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:36:13-41
+73            android:exported="false" />
+73-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:37:13-37
+74        <activity
+74-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:38:9-46:20
+75            android:name="com.blablacar4v.LoginActivity"
+75-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:39:13-42
+76            android:exported="true" >
+76-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:40:13-36
+77            <intent-filter>
+77-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:41:13-45:29
+78                <action android:name="android.intent.action.MAIN" />
+78-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:42:17-69
+78-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:42:25-66
+79
+80                <category android:name="android.intent.category.LAUNCHER" />
+80-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:44:17-77
+80-->C:\Users\asuar\AndroidStudioProjects\BlaBlaCar4vientos\app\src\main\AndroidManifest.xml:44:27-74
+81            </intent-filter>
+82        </activity>
+83        <!-- Needs to be explicitly declared on P+ -->
+84        <uses-library
+84-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\649fe6d5611898714c5475c58c8fba15\transformed\play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+85            android:name="org.apache.http.legacy"
+85-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\649fe6d5611898714c5475c58c8fba15\transformed\play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+86            android:required="false" />
+86-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\649fe6d5611898714c5475c58c8fba15\transformed\play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+87
+88        <activity
+88-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:29:9-46:20
+89            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+89-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:30:13-80
+90            android:excludeFromRecents="true"
+90-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:31:13-46
+91            android:exported="true"
+91-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:32:13-36
+92            android:launchMode="singleTask"
+92-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:33:13-44
+93            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+93-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:34:13-72
+94            <intent-filter>
+94-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:35:13-45:29
+95                <action android:name="android.intent.action.VIEW" />
+95-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:36:17-69
+95-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:36:25-66
+96
+97                <category android:name="android.intent.category.DEFAULT" />
+97-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:38:17-76
+97-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:38:27-73
+98                <category android:name="android.intent.category.BROWSABLE" />
+98-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:39:17-78
+98-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:39:27-75
+99
+100                <data
+100-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:41:17-44:51
+101                    android:host="firebase.auth"
+101-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:42:21-49
+102                    android:path="/"
+102-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:43:21-37
+103                    android:scheme="genericidp" />
+103-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:44:21-48
+104            </intent-filter>
+105        </activity>
+106        <activity
+106-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:47:9-64:20
+107            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+107-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:48:13-79
+108            android:excludeFromRecents="true"
+108-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:49:13-46
+109            android:exported="true"
+109-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:50:13-36
+110            android:launchMode="singleTask"
+110-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:51:13-44
+111            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+111-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:52:13-72
+112            <intent-filter>
+112-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:53:13-63:29
+113                <action android:name="android.intent.action.VIEW" />
+113-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:36:17-69
+113-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:36:25-66
+114
+115                <category android:name="android.intent.category.DEFAULT" />
+115-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:38:17-76
+115-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:38:27-73
+116                <category android:name="android.intent.category.BROWSABLE" />
+116-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:39:17-78
+116-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:39:27-75
+117
+118                <data
+118-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:41:17-44:51
+119                    android:host="firebase.auth"
+119-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:42:21-49
+120                    android:path="/"
+120-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:43:21-37
+121                    android:scheme="recaptcha" />
+121-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:44:21-48
+122            </intent-filter>
+123        </activity>
+124
+125        <service
+125-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:66:9-72:19
+126            android:name="com.google.firebase.components.ComponentDiscoveryService"
+126-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:67:13-84
+127            android:directBootAware="true"
+127-->[com.google.firebase:firebase-common:20.4.2] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\8af6780ac857eb2f668a3db1c44967db\transformed\firebase-common-20.4.2\AndroidManifest.xml:32:13-43
+128            android:exported="false" >
+128-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:68:13-37
+129            <meta-data
+129-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:69:13-71:85
+130                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+130-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:70:17-109
+131                android:value="com.google.firebase.components.ComponentRegistrar" />
+131-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b4746724bb3130b43a6d1100a9340fa\transformed\firebase-auth-22.3.1\AndroidManifest.xml:71:17-82
+132            <meta-data
+132-->[com.google.firebase:firebase-firestore:24.10.2] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\0877a0e3f2462cd0eb96bcadfc6ef861\transformed\firebase-firestore-24.10.2\AndroidManifest.xml:17:13-19:85
+133                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+133-->[com.google.firebase:firebase-firestore:24.10.2] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\0877a0e3f2462cd0eb96bcadfc6ef861\transformed\firebase-firestore-24.10.2\AndroidManifest.xml:18:17-122
+134                android:value="com.google.firebase.components.ComponentRegistrar" />
+134-->[com.google.firebase:firebase-firestore:24.10.2] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\0877a0e3f2462cd0eb96bcadfc6ef861\transformed\firebase-firestore-24.10.2\AndroidManifest.xml:19:17-82
+135            <meta-data
+135-->[com.google.firebase:firebase-firestore:24.10.2] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\0877a0e3f2462cd0eb96bcadfc6ef861\transformed\firebase-firestore-24.10.2\AndroidManifest.xml:20:13-22:85
+136                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+136-->[com.google.firebase:firebase-firestore:24.10.2] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\0877a0e3f2462cd0eb96bcadfc6ef861\transformed\firebase-firestore-24.10.2\AndroidManifest.xml:21:17-111
+137                android:value="com.google.firebase.components.ComponentRegistrar" />
+137-->[com.google.firebase:firebase-firestore:24.10.2] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\0877a0e3f2462cd0eb96bcadfc6ef861\transformed\firebase-firestore-24.10.2\AndroidManifest.xml:22:17-82
+138            <meta-data
+138-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\70ed699a4c8598ae23ad7f7f0a1e2128\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:37:13-39:85
+139                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+139-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\70ed699a4c8598ae23ad7f7f0a1e2128\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:38:17-139
+140                android:value="com.google.firebase.components.ComponentRegistrar" />
+140-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\70ed699a4c8598ae23ad7f7f0a1e2128\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:39:17-82
+141            <meta-data
+141-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\0aed20ffcde024c6407027b3e315602f\transformed\firebase-installations-17.2.0\AndroidManifest.xml:15:13-17:85
+142                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+142-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\0aed20ffcde024c6407027b3e315602f\transformed\firebase-installations-17.2.0\AndroidManifest.xml:16:17-130
+143                android:value="com.google.firebase.components.ComponentRegistrar" />
+143-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\0aed20ffcde024c6407027b3e315602f\transformed\firebase-installations-17.2.0\AndroidManifest.xml:17:17-82
+144            <meta-data
+144-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\0aed20ffcde024c6407027b3e315602f\transformed\firebase-installations-17.2.0\AndroidManifest.xml:18:13-20:85
+145                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+145-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\0aed20ffcde024c6407027b3e315602f\transformed\firebase-installations-17.2.0\AndroidManifest.xml:19:17-127
+146                android:value="com.google.firebase.components.ComponentRegistrar" />
+146-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\0aed20ffcde024c6407027b3e315602f\transformed\firebase-installations-17.2.0\AndroidManifest.xml:20:17-82
+147            <meta-data
+147-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\d0ef9c9ce3994e2b21840f690cb42281\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
+148                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+148-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\d0ef9c9ce3994e2b21840f690cb42281\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
+149                android:value="com.google.firebase.components.ComponentRegistrar" />
+149-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\d0ef9c9ce3994e2b21840f690cb42281\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
+150            <meta-data
+150-->[com.google.firebase:firebase-common:20.4.2] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\8af6780ac857eb2f668a3db1c44967db\transformed\firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
+151                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+151-->[com.google.firebase:firebase-common:20.4.2] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\8af6780ac857eb2f668a3db1c44967db\transformed\firebase-common-20.4.2\AndroidManifest.xml:36:17-109
+152                android:value="com.google.firebase.components.ComponentRegistrar" />
+152-->[com.google.firebase:firebase-common:20.4.2] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\8af6780ac857eb2f668a3db1c44967db\transformed\firebase-common-20.4.2\AndroidManifest.xml:37:17-82
+153        </service>
+154
+155        <property
+155-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\70ed699a4c8598ae23ad7f7f0a1e2128\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:30:9-32:61
+156            android:name="android.adservices.AD_SERVICES_CONFIG"
+156-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\70ed699a4c8598ae23ad7f7f0a1e2128\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:31:13-65
+157            android:resource="@xml/ga_ad_services_config" />
+157-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\70ed699a4c8598ae23ad7f7f0a1e2128\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:32:13-58
+158
+159        <provider
+159-->[com.google.firebase:firebase-common:20.4.2] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\8af6780ac857eb2f668a3db1c44967db\transformed\firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
+160            android:name="com.google.firebase.provider.FirebaseInitProvider"
+160-->[com.google.firebase:firebase-common:20.4.2] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\8af6780ac857eb2f668a3db1c44967db\transformed\firebase-common-20.4.2\AndroidManifest.xml:24:13-77
+161            android:authorities="com.blablacar4v.firebaseinitprovider"
+161-->[com.google.firebase:firebase-common:20.4.2] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\8af6780ac857eb2f668a3db1c44967db\transformed\firebase-common-20.4.2\AndroidManifest.xml:25:13-72
+162            android:directBootAware="true"
+162-->[com.google.firebase:firebase-common:20.4.2] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\8af6780ac857eb2f668a3db1c44967db\transformed\firebase-common-20.4.2\AndroidManifest.xml:26:13-43
+163            android:exported="false"
+163-->[com.google.firebase:firebase-common:20.4.2] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\8af6780ac857eb2f668a3db1c44967db\transformed\firebase-common-20.4.2\AndroidManifest.xml:27:13-37
+164            android:initOrder="100" />
+164-->[com.google.firebase:firebase-common:20.4.2] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\8af6780ac857eb2f668a3db1c44967db\transformed\firebase-common-20.4.2\AndroidManifest.xml:28:13-36
+165
+166        <activity
+166-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\1b1d13d74c05c18e275429fee16e34fb\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+167            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+167-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\1b1d13d74c05c18e275429fee16e34fb\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+168            android:exported="false"
+168-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\1b1d13d74c05c18e275429fee16e34fb\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+169            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+169-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\1b1d13d74c05c18e275429fee16e34fb\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+170
+171        <receiver
+171-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\a3032b8607e2bf569264bbabf3160ed4\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:29:9-33:20
+172            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+172-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\a3032b8607e2bf569264bbabf3160ed4\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:30:13-85
+173            android:enabled="true"
+173-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\a3032b8607e2bf569264bbabf3160ed4\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:31:13-35
+174            android:exported="false" >
+174-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\a3032b8607e2bf569264bbabf3160ed4\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:32:13-37
+175        </receiver>
+176
+177        <service
+177-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\a3032b8607e2bf569264bbabf3160ed4\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:35:9-38:40
+178            android:name="com.google.android.gms.measurement.AppMeasurementService"
+178-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\a3032b8607e2bf569264bbabf3160ed4\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:36:13-84
+179            android:enabled="true"
+179-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\a3032b8607e2bf569264bbabf3160ed4\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:37:13-35
+180            android:exported="false" />
+180-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\a3032b8607e2bf569264bbabf3160ed4\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:38:13-37
+181        <service
+181-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\a3032b8607e2bf569264bbabf3160ed4\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:39:9-43:72
+182            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+182-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\a3032b8607e2bf569264bbabf3160ed4\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:40:13-87
+183            android:enabled="true"
+183-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\a3032b8607e2bf569264bbabf3160ed4\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:41:13-35
+184            android:exported="false"
+184-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\a3032b8607e2bf569264bbabf3160ed4\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:42:13-37
+185            android:permission="android.permission.BIND_JOB_SERVICE" />
+185-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\a3032b8607e2bf569264bbabf3160ed4\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:43:13-69
+186
+187        <provider
+187-->[androidx.emoji2:emoji2:1.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3abe49c2e42fd1711e60fd044e567451\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+188            android:name="androidx.startup.InitializationProvider"
+188-->[androidx.emoji2:emoji2:1.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3abe49c2e42fd1711e60fd044e567451\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+189            android:authorities="com.blablacar4v.androidx-startup"
+189-->[androidx.emoji2:emoji2:1.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3abe49c2e42fd1711e60fd044e567451\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+190            android:exported="false" >
+190-->[androidx.emoji2:emoji2:1.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3abe49c2e42fd1711e60fd044e567451\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+191            <meta-data
+191-->[androidx.emoji2:emoji2:1.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3abe49c2e42fd1711e60fd044e567451\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+192                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+192-->[androidx.emoji2:emoji2:1.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3abe49c2e42fd1711e60fd044e567451\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+193                android:value="androidx.startup" />
+193-->[androidx.emoji2:emoji2:1.2.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3abe49c2e42fd1711e60fd044e567451\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+194            <meta-data
+194-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\da2ce8c33cda3dbcc99ab82c25489322\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+195                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+195-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\da2ce8c33cda3dbcc99ab82c25489322\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+196                android:value="androidx.startup" />
+196-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\da2ce8c33cda3dbcc99ab82c25489322\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+197            <meta-data
+197-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b3a83a8063b6171b3f087cded090126\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+198                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+198-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b3a83a8063b6171b3f087cded090126\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+199                android:value="androidx.startup" />
+199-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b3a83a8063b6171b3f087cded090126\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+200        </provider>
+201
+202        <uses-library
+202-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\0c2ade5f65d60e7ee2fd4cb73b7680aa\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
+203            android:name="android.ext.adservices"
+203-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\0c2ade5f65d60e7ee2fd4cb73b7680aa\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
+204            android:required="false" />
+204-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\0c2ade5f65d60e7ee2fd4cb73b7680aa\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
+205
+206        <meta-data
+206-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\4904ce3dfdc1aaf98ee34342a6dacbba\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+207            android:name="com.google.android.gms.version"
+207-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\4904ce3dfdc1aaf98ee34342a6dacbba\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+208            android:value="@integer/google_play_services_version" />
+208-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\4904ce3dfdc1aaf98ee34342a6dacbba\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+209
+210        <receiver
+210-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b3a83a8063b6171b3f087cded090126\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+211            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+211-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b3a83a8063b6171b3f087cded090126\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+212            android:directBootAware="false"
+212-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b3a83a8063b6171b3f087cded090126\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+213            android:enabled="true"
+213-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b3a83a8063b6171b3f087cded090126\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+214            android:exported="true"
+214-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b3a83a8063b6171b3f087cded090126\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+215            android:permission="android.permission.DUMP" >
+215-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b3a83a8063b6171b3f087cded090126\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+216            <intent-filter>
+216-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b3a83a8063b6171b3f087cded090126\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+217                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+217-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b3a83a8063b6171b3f087cded090126\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+217-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b3a83a8063b6171b3f087cded090126\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+218            </intent-filter>
+219            <intent-filter>
+219-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b3a83a8063b6171b3f087cded090126\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+220                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+220-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b3a83a8063b6171b3f087cded090126\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+220-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b3a83a8063b6171b3f087cded090126\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+221            </intent-filter>
+222            <intent-filter>
+222-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b3a83a8063b6171b3f087cded090126\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+223                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+223-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b3a83a8063b6171b3f087cded090126\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+223-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b3a83a8063b6171b3f087cded090126\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+224            </intent-filter>
+225            <intent-filter>
+225-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b3a83a8063b6171b3f087cded090126\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+226                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+226-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b3a83a8063b6171b3f087cded090126\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+226-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\asuar\Documents\DAM\2DAM\caches\transforms-3\3b3a83a8063b6171b3f087cded090126\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+227            </intent-filter>
+228        </receiver>
+229    </application>
+230
+231</manifest>
