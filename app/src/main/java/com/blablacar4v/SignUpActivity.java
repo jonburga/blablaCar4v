@@ -44,8 +44,7 @@ public class SignUpActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (!emailEditText.getText().toString().isEmpty() || !passwordEditText.getText().toString().isEmpty()) {
                     FirebaseAuth.getInstance().createUserWithEmailAndPassword(emailEditText.getText().toString(), passwordEditText.getText().toString());
-                    if (FirebaseAuth.getInstance().getCurrentUser() != null) {
-                        db.collection("users").document(FirebaseAuth.getInstance().getCurrentUser().getUid()).set(new User(
+                          db. ("users").document(FirebaseAuth.getInstance().getCurrentUser().getUid()).set(new User(
                                 directionEditText.getText().toString(),
                                 passwordEditText.getText().toString(),
                                 emailEditText.getText().toString(),

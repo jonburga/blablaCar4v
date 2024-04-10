@@ -53,6 +53,9 @@ dependencies {
     // Declare the dependency for the Cloud Firestore library
     // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation("com.google.firebase:firebase-firestore")
+    implementation ("com.google.android.libraries.places:places:3.1.0")
+
+    implementation ("com.etebarian:meow-bottom-navigation:1.2.0")
 
 
 }

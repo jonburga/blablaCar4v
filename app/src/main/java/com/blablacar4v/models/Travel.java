@@ -2,7 +2,7 @@ package com.blablacar4v.models;
 
 import java.util.ArrayList;
 
-public class Travel {
+public class    Travel {
 
     private String departureHour;
     private String arrivalHour;
