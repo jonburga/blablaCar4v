@@ -42,9 +42,10 @@ public class SignUpActivity extends AppCompatActivity {
         signUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                /*
                 if (!emailEditText.getText().toString().isEmpty() || !passwordEditText.getText().toString().isEmpty()) {
                     FirebaseAuth.getInstance().createUserWithEmailAndPassword(emailEditText.getText().toString(), passwordEditText.getText().toString());
-                          db. ("users").document(FirebaseAuth.getInstance().getCurrentUser().getUid()).set(new User(
+                          db.("users").document(FirebaseAuth.getInstance().getCurrentUser().getUid()).set(new User(
                                 directionEditText.getText().toString(),
                                 passwordEditText.getText().toString(),
                                 emailEditText.getText().toString(),
@@ -57,7 +58,10 @@ public class SignUpActivity extends AppCompatActivity {
                 } else {
                     showAlert();
                 }
+                 */
+
             }
+
         });
     }
 

@@ -16,9 +16,6 @@ public class    Travel {
 
     public Travel() {
     }
-
-
-
     public Travel(String arrivalHour, String arrivalPlace, String departureDate, String departureHour, String departurePlace, String description,  int seats, String userPublicated) {
         this.arrivalHour = arrivalHour;
         this.arrivalPlace = arrivalPlace;

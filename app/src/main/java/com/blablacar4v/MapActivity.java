@@ -15,7 +15,6 @@ public class MapActivity extends AppCompatActivity {
         setContentView(R.layout.activity_map);
         createFragment();
     }
-
     private void createFragment() {
         MapFragment fragment = new MapFragment();
         fragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);

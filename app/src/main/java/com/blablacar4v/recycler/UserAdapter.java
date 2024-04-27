@@ -62,12 +62,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.RecyclerDataHo
         public RecyclerDataHolder(@NonNull View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.imageView);
-            textName = itemView.findViewById(R.id.textName);
-            textDeparturePlace = itemView.findViewById(R.id.textDeparturePlace);
-            textDepartureDate = itemView.findViewById(R.id.textDateTravel);
-            textDepartureHour = itemView.findViewById(R.id.textHourDeparture);
-            textSeats = itemView.findViewById(R.id.textSeats);
-            button = itemView.findViewById(R.id.buttonEntry);
+
         }
 
         public void assignData(Travel travel, OnItemClickListener onItemClick) {
