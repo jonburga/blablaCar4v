@@ -64,16 +64,12 @@ public class SignUpActivity extends AppCompatActivity {
 
         });
     }
-
-
-
     private void showHome(String name, ProviderType provider){
         Intent intent = new Intent(this, LoginActivity.class);
         intent.putExtra("name", name);
         intent.putExtra("provider", provider.toString());
         startActivity(intent);
     }
-
     private void showAlert(){
         Toast.makeText(this, "Se ha producido un error", Toast.LENGTH_SHORT).show();
     }
